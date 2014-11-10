@@ -9,23 +9,19 @@ class TodoApp < CommandLineApp
     puts "'list' to list projects"
     puts "'create' to create a new project"
     puts "'edit' to edit a project"
-  end
 
-  input = gets.chomp
-  puts "Welcome"
 
-  def run
-    while input != "quit"
-      quit = gets.chomp
-      # if input == "list"
+    user_input = gets.chomp
+    puts "Welcome"
+
+    while user_input != "quit"
+      if user_input == "list"
+      # if user_input == "list"
       # puts "i'm inside list"
       # end
+      end
     end
     puts "Type one of the commands"
-    input = gets.chomp
+    user_input = gets.chomp
   end
-
-
-
-
 end
